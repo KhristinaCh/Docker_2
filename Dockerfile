@@ -7,9 +7,6 @@ WORKDIR /src
 
 COPY . /src
 
-RUN python3 /src/manage.py makemigrations
-RUN python3 /src/manage.py migrate
-
 EXPOSE 8080
 
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8080"]
+CMD ["python3", "manage.py", "runserver", "127.0.0.1:7777"]
