@@ -7,7 +7,7 @@ networks:
   crud_net:
 
 services:
-  potgredb:
+  postgredb:
     image: postgres:latest
     environment:
       POSTGRES_DB: "crud_db"
